@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: rgb(250, 193, 215);
+            font: normal 12pt arial;
+        }
+        header{
+            color: honeydew;
+            text-align: center;
+        }
+        section{
+            background: white;
+            border-radius: 15px;
+            padding:  15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px black;
+        }
+        footer{
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+        
+    </style>
+
+    <script src="script.js">
+        
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Idade</h1>
+    </header>
+    <section>
+        <div >
+            <p>ano de nascimento:
+                <input type="number" name="iano" id="iano" min="0">
+            </p>
+            <p>Sexo
+                <input type="radio" name="isex" id="masc"  checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="isex" id="fem"  >
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os campos acima
+        </div>
+    </section>
+    <footer>
+        &copy; Brenda Pereira
+    </footer>
+</body>
+</html>
